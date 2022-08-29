@@ -1,0 +1,106 @@
+.productions
+	padding-bottom: 50px
+	&-title
+		font-size: 38px
+		font-family: Roboto-Black
+		font-weight: normal
+		font-style: normal
+		text-align: center
+		padding: 50px
+		&::after
+			content: ''
+			display: block
+			height: 6px
+			background: url(../img/productions/line.png) center no-repeat
+			padding-top: 20px
+	&-block
+		&__img
+			text-align: center
+		&__title
+			font-size: 20px
+			color: #313131
+			text-align: center
+			padding-top: 35px
+			font-family: Roboto-Black
+			font-weight: normal
+			font-style: normal
+		&__buttons
+			padding-top: 15px
+			text-align: center
+		&__button-o
+			background-color: #ffffff
+			border: 1px solid #bbbbbb
+			color: #bbbbbb
+			&:hover
+				transition: 0.5s all
+				background-color: $orange
+				color: #fff
+		&__button
+			padding-left: 35px
+			padding-right: 35px
+	&-popup
+		position: fixed
+		z-index: 2
+		margin: auto
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		display: none
+		&__bg
+			position: fixed
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0, 0, 0, 0.7)
+			display: block
+			cursor: pointer
+		&__title
+			text-align: center
+			padding-top: 35px
+			font-size: 32px
+			background-color: $orange
+			padding-bottom: 35px
+			color: #fff
+			border-radius: 23px
+			border-bottom-left-radius: 0px
+			border-bottom-right-radius: 0px
+		&__description
+			text-align: justify
+			padding-left: 5%
+			padding-right: 5%
+			padding-top: 35px
+			font-size: 24px
+.popup
+	&-block
+		width: 35%
+		height: 50%
+		border: 1px solid #000
+		border-radius: 25px
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		position: absolute
+		background-color: #fff
+		z-index: 3
+		margin: auto
+		display: block
+		&::before
+			content: 'X'
+			position: absolute
+			width: 35px
+			height: 35px
+			color: #fff
+			font-size: 25px
+			right: -30px
+			top: -25px
+			cursor: pointer
+	&-one
+		display: none
+	&-two
+		display: none
+	&-three
+		display: none
+	&-four
+		display: none

@@ -1,0 +1,57 @@
+*
+	box-sizing: border-box
+body
+	font-family: Roboto, sans-serif
+	margin: 0
+img
+	max-width: 100%
+$text-roboto-dark: #373737
+$text-roboto-light: #ffffff
+$orange: #f39003
+.button
+	background-color: $orange
+	border: none
+	border-radius: 5px
+	padding: 13px 22px
+	font-size: 14px
+	color: #ffffff
+	font-weight: normal
+	font-style: normal
+	font-family: Roboto-Regular
+
+.slick-slide
+	text-align: center !important
+	display: flex !important
+	justify-content: center
+	align-items: center
+.slick-arrow
+	// border: 1px solid #323232 !important
+	background-color: $orange !important
+	width: 35px !important
+	min-height: 35px !important
+	border-radius: 5px
+.slick-next
+	&::before
+		content: '⮞' !important
+		font-size: 35px !important
+		color: #fff !important
+		line-height: 0.6 !important
+.slick-prev
+	&::before
+		content: '⮜' !important
+		font-size: 35px !important
+		color: #fff !important
+		line-height: 0.6 !important
+
+@import 'header'
+@import 'info'
+@import 'overlay'
+@import 'advan'
+@import 'productions'
+@import 'clients'
+@import 'offer'
+@import 'manufacture'
+@import 'reviews'
+@import 'media'
+@import 'contacts'
+@import 'thanks'
